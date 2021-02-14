@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import mainURL from "./baseAPI/baseURL";
-import Student from "./StudentData";
+import Student from "./Student";
 
 class App extends Component 
 {
