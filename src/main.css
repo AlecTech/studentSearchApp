@@ -42,3 +42,16 @@ body {
     padding: 10px 20px;
     border-bottom: 1px solid lightgray;
 }
+
+/* .searchField {
+ 
+    width: 95vw;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+} */
+#searchInput {
+    /* position: inherit; */
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 10px 0;
+}

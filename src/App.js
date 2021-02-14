@@ -19,12 +19,24 @@ class App extends Component
 
 
   renderData = () => this.state.students.map(student => <Student key={student.id} student={student} />);
-
+  handleSubmit = e => e.preventDefault();
   render() {
     return (
       
       <div className="container">
         <div className="page">
+
+          <form className="searchField" action="submit" onSubmit={this.handleSubmit}>
+            <input
+              id="searchInput"
+              className="searchFieldInput"
+              type="text"
+              placeholder="Search by name"
+            />
+            <label htmlFor="searchFieldInput" className="searchFieldLable" > </label>
+          </form>
+
+
           {this.renderData()}
         </div>
       </div>  
