@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-
 import mainURL from "./baseAPI/baseURL";
 import Student from "./Student";
-
 import SearchField from "./SearchField";
 
 class App extends Component 
@@ -15,14 +13,12 @@ class App extends Component
   componentDidMount() {
     mainURL.get()
       .then(res => {
-        this.setState({ students: res.data.students});
-        
+        this.setState({ students: res.data.students});    
       })
       .catch(err => console.log(err));
       console.log(mainURL);
   };
 
-  
   renderData = () => {
     const { search, students } = this.state;
     // === value and type are the same
