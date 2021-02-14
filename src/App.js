@@ -18,18 +18,18 @@ class App extends Component
   };
 
 
-  renderRoster = () => this.state.students.map(student => <Student key={student.id} student={student} />);
+  renderData = () => this.state.students.map(student => <Student key={student.id} student={student} />);
 
   render() {
     return (
       
-        
+      <div className="container">
         <div className="page">
-          {this.renderRoster()}
+          {this.renderData()}
         </div>
-      
+      </div>  
     );
-  }  
+  };  
 };
 
 export default App;
