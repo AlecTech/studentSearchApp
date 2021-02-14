@@ -1,7 +1,6 @@
 import React from "react";
 
 export default ({ student }) => {
-  console.log(student);
 
   const avgGrade = student.grades.reduce((total, grade) => total += parseInt(grade), 0) / student.grades.length;
 

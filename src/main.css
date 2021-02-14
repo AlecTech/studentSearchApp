@@ -50,8 +50,13 @@ body {
     margin: 5px 0 10px 0;
 } */
 #searchInput {
-    /* position: inherit; */
+
     width: 100%;
     padding: 10px;
-    margin: 5px 0 10px 0;
+    margin: 10px 0 10px 0;
 }
+
+.searchField input{
+    width: 100%;
+}
+
